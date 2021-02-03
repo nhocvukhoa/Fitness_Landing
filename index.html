@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fitness Landing Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+        <section class="fitness">
+            <header>
+                <a href="#" class="logo">Fitness</a>
+                <div class="toggleMenu" onclick="toggleMenu();"></div>
+                <ul class="navigation">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Trainers</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="contentBox">
+                    <h2 class="title animate__animated animate__backInLeft">Build Perfect Body<br>
+                        With Clean Mind
+                    </h2>
+                    <p class="detail-title animate__animated animate__backInRight">Lorem ipsum dolor sit amet
+                        consectetur, adipisicing elit.
+                        Autem minima explicabo maxime necessitatibus laborum sit
+                        ad corporis qui fugiat praesentium? Quo libero vitae
+                        quasi
+                        adipisci impedit vero excepturi corrupti fugit.</p>
+                    <a href="#" class="start  animate__animated animate__backInUp" onclick="toggleVideo();">Get Started</a>
+                </div>
+                <div class="social">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="course">
+            <video src="./assets/video/fitness.mp4" controls="true"></video>
+            <p>Full Body Resistance Band Loop Workout</p>
+            <img src="./assets/images/close.png" alt="Close" onclick="toggleVideo();" class="closeVideo">
+        </section>
+    </body>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="https://kit.fontawesome.com/e97e4b8b13.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function toggleMenu(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active')
+            navigation.classList.toggle('active')
+        } ;
+        function toggleVideo(){
+            var course= document.querySelector('.course');
+            var video= document.querySelector('video');
+            course.classList.toggle('active');
+            video.currentTime=0;
+            video.pause();
+        }
+    </script>
+</html>

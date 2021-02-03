@@ -1,0 +1,172 @@
+@media(max-width:991px){
+    header{
+        padding:15px 100px;
+    }
+    .content .title {
+        font-size: 3em;
+        color: #fff;
+        line-height: 1em;
+    }
+    .content .detail-title{
+        font-size: 1em;
+    }
+    .course video{
+        max-width: 90%;
+    }
+    .course p{
+        max-width: 90%;
+    }
+}
+@media(max-width:767px){
+    .fitness{
+        background: url('../images/bg2.jpg') no-repeat;
+        background-position: center ;
+        background-size: cover;
+    }
+    header .navigation{
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom: 0;
+        background: #000;
+        z-index: 10;
+        /* display: flex; */
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .navigation.active{
+        display: flex;
+    }
+
+    header .navigation li{
+        margin-right: 0;
+    }
+    header .navigation li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    header .toggleMenu{
+        display: block;
+    }
+    header .toggleMenu.active{
+        display: block;
+    }
+    .content .title {
+        font-size: 2.5em;
+        color: #fff;
+        line-height: 1em;
+    }
+    .content .detail-title {
+        font-size: 0.9em;
+    }
+    .content .social i{
+        font-size: 26px;
+    } 
+    .course p{
+        font-size: 22px;
+        text-align: center;
+    }
+}
+@media(max-width:640px){
+    header .logo{
+        font-size: 1.9em;
+    }
+    header .toggleMenu {
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+    }
+    header .navigation li a {
+        font-size: 23px;
+    }
+    .content .title {
+        font-size: 2em;
+        color: #fff;
+        line-height: 1em;
+    }
+    .content .social i{
+        font-size: 24px;
+    }  
+    .course p{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media(max-width:580px){
+    header{
+        padding:15px 80px;
+    }
+    header .logo{
+        font-size: 1.7em;
+    }
+    header .toggleMenu {
+        width: 20px;
+        height: 20px;
+        background-size: 20px;
+    }
+    .content{
+        padding:120px 80px;
+    }
+    .content .title {
+        font-size: 1.8em;
+        color: #fff;
+        line-height: 1em;
+    }
+    .content .social i{
+        font-size: 22px;
+    }
+    .course p{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media(max-width:480px){
+    header{
+        padding: 15px 40px;
+    }
+    .content{
+        padding: 120px 40px;
+    }
+    .content .title{
+        font-size: 1.6em;
+    }
+    .course p{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+@media(max-width:320px){
+    header{
+        padding: 15px 30px;
+    }
+    header .logo{
+        font-size: 1.4em;
+    }
+    header .navigation li a{
+        font-size: 20px;
+    }
+    .content{
+        padding: 35px 40px;
+    }
+    .content .title{
+        font-size: 1.4em;
+    }
+    .content .start{
+        margin-bottom: 80px;
+    }
+    .content .social{
+        bottom:50px;
+    }
+    .course p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .content .contentBox {
+        max-width: 600px;
+        margin-top: 60px;
+    }
+
+}
